@@ -1,7 +1,8 @@
-public class Person implements Comparable<Person>{
+public class Person /*implements Comparable<Person>*/{
     private String firstName;
     private String lastName;
     private int age;
+    private Hobbies hobbies;
 
     public Person(){};
 
@@ -35,17 +36,21 @@ public class Person implements Comparable<Person>{
         this.age = age;
     }
 
-    @Override
-    public String toString() {
-        return "Person{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", age=" + age +
-                '}';
+    public Hobbies getHobbies() {
+        return hobbies;
+    }
+
+    public void setHobbies(Hobbies hobbies) {
+        this.hobbies = hobbies;
     }
 
     @Override
+    public String toString() {
+        return  firstName + " " + lastName + " is " + age+" years old";
+    }
+
+    /*@Override
     public int compareTo(Person o) {
         return lastName.compareTo(o.getLastName());
-    }
+    }*/
 }

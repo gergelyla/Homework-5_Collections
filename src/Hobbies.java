@@ -1,15 +1,20 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class Hobbies {
     private String nameOfHobby;
     private String frequencyOfHobby;
-    private String adressOfHobby;
+    private List<Address> address=new ArrayList<Address>();
 
     public Hobbies(){
 
     }
-    public Hobbies(String nameOfHobby, String frequencyOfHobby, String adressOfHobby){
+    public Hobbies(String nameOfHobby, String frequencyOfHobby,List address){
         this.nameOfHobby=nameOfHobby;
         this.frequencyOfHobby=frequencyOfHobby;
-        this.adressOfHobby=adressOfHobby;
+        this.address=address;
     }
 
     public String getNameOfHobby() {
@@ -28,11 +33,18 @@ public class Hobbies {
         this.frequencyOfHobby = frequencyOfHobby;
     }
 
-    public String getAdressOfHobby() {
-        return adressOfHobby;
+    public List<Address> getAddress() {
+        return address;
     }
 
-    public void setAdressOfHobby(String adressOfHobby) {
-        this.adressOfHobby = adressOfHobby;
+    public void setAddress(List<Address> address) {
+        this.address = address;
+    }
+
+    @Override
+    public String toString() {
+        return nameOfHobby +
+                ", frequency: " + frequencyOfHobby + '\'' +
+                ", address:" + address;
     }
 }
