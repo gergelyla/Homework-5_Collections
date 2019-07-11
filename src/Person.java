@@ -1,15 +1,18 @@
-public class Person /*implements Comparable<Person>*/{
+public class Person /*implements Comparable<Person>*/ {
     private String firstName;
     private String lastName;
     private int age;
     private Hobbies hobbies;
 
-    public Person(){};
+    public Person() {
+    }
 
-    public Person(String firstName, String lastName, int age){
-        this.firstName=firstName;
-        this.lastName=lastName;
-        this.age=age;
+    ;
+
+    public Person(String firstName, String lastName, int age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
     }
 
     public String getFirstName() {
@@ -46,7 +49,7 @@ public class Person /*implements Comparable<Person>*/{
 
     @Override
     public String toString() {
-        return  firstName + " " + lastName + " is " + age+" years old";
+        return firstName + " " + lastName + " is " + age + " years old";
     }
 
     /*@Override

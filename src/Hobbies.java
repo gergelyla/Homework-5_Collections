@@ -6,15 +6,16 @@ import java.util.Map;
 public class Hobbies {
     private String nameOfHobby;
     private String frequencyOfHobby;
-    private List<Address> address=new ArrayList<Address>();
+    private List<Address> address = new ArrayList<Address>();
 
-    public Hobbies(){
+    public Hobbies() {
 
     }
-    public Hobbies(String nameOfHobby, String frequencyOfHobby,List address){
-        this.nameOfHobby=nameOfHobby;
-        this.frequencyOfHobby=frequencyOfHobby;
-        this.address=address;
+
+    public Hobbies(String nameOfHobby, String frequencyOfHobby, List address) {
+        this.nameOfHobby = nameOfHobby;
+        this.frequencyOfHobby = frequencyOfHobby;
+        this.address = address;
     }
 
     public String getNameOfHobby() {
@@ -44,6 +45,6 @@ public class Hobbies {
     @Override
     public String toString() {
         return nameOfHobby +
-                ", frequency: " + frequencyOfHobby +", address:" + address+"|";
+                ", frequency: " + frequencyOfHobby + ", address:" + address + "|";
     }
 }

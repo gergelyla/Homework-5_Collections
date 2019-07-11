@@ -3,10 +3,10 @@ public class Address {
     private String streetName;
     private int streetNumber;
 
-    public Address(String cityName,String streetName,int streetNumber){
-        this.cityName=cityName;
-        this.streetName=streetName;
-        this.streetNumber=streetNumber;
+    public Address(String cityName, String streetName, int streetNumber) {
+        this.cityName = cityName;
+        this.streetName = streetName;
+        this.streetNumber = streetNumber;
     }
 
     public String getCityName() {
