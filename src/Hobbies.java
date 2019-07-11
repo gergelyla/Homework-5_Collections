@@ -44,7 +44,6 @@ public class Hobbies {
     @Override
     public String toString() {
         return nameOfHobby +
-                ", frequency: " + frequencyOfHobby + '\'' +
-                ", address:" + address;
+                ", frequency: " + frequencyOfHobby +", address:" + address+"|";
     }
 }
