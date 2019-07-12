@@ -9,10 +9,11 @@ public class Person /*implements Comparable<Person>*/ {
 
     ;
 
-    public Person(String firstName, String lastName, int age) {
+    public Person(String firstName, String lastName, int age, Hobbies hobbies) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
+        this.hobbies = hobbies;
     }
 
     public String getFirstName() {
@@ -49,7 +50,7 @@ public class Person /*implements Comparable<Person>*/ {
 
     @Override
     public String toString() {
-        return firstName + " " + lastName + " is " + age + " years old";
+        return firstName + " " + lastName + " - " + age + " years old";
     }
 
     /*@Override
