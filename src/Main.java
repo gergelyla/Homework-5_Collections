@@ -53,21 +53,23 @@ public class Main {
 
     private static void listSpecificPersonAndHobbies(Map<Person, Hobbies> personsHobbies) {
         System.out.println("---------------------------------------------------------------");
-        String listedPersonFirstName="Raul",listedPersonLastName="Rosu";
-        boolean foundPerson=false;
-        for (Person person:personsHobbies.keySet()){
-            if (listedPersonFirstName.equals(person.getFirstName())&&listedPersonLastName.equals(person.getLastName())){
-                System.out.println(person.getFirstName() + " " + person.getLastName() + " ("+person.getAge()+" years old) has the following hobby/s: " + personsHobbies.get(person));
-                foundPerson=true;
+        String listedPersonFirstName = "Raul", listedPersonLastName = "Rosu";
+        boolean foundPerson = false;
+        for (Person person : personsHobbies.keySet()) {
+            if (listedPersonFirstName.equals(person.getFirstName()) && listedPersonLastName.equals(person.getLastName())) {
+                System.out.println(person.getFirstName() + " " + person.getLastName() + " (" + person.getAge() + " years old) has the following hobby/s: " + personsHobbies.get(person));
+                foundPerson = true;
             }
         }
-        if (foundPerson=false){System.out.println("No such person on file");}
+        if (foundPerson = false) {
+            System.out.println("No such person on file");
+        }
     }
 
     private static void listAllPersonsAndHobbies(Map<Person, Hobbies> personsHobbies) {
         System.out.println("---------------------------------------------------------------");
         for (Person person : personsHobbies.keySet()) {
-            System.out.println(person.getFirstName() + " " + person.getLastName() + " ("+person.getAge()+" years old) has the following hobby/s: " + personsHobbies.get(person));
+            System.out.println(person.getFirstName() + " " + person.getLastName() + " (" + person.getAge() + " years old) has the following hobby/s: " + personsHobbies.get(person));
         }
     }
 
