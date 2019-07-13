@@ -7,8 +7,6 @@ public class Person /*implements Comparable<Person>*/ {
     public Person() {
     }
 
-    ;
-
     public Person(String firstName, String lastName, int age, Hobbies hobbies) {
         this.firstName = firstName;
         this.lastName = lastName;
