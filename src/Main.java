@@ -1,8 +1,12 @@
 import java.util.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Main {
-    public static void main(String[] args) {
+    private static Logger LOGGER=Logger.getLogger(Main.class.getName());
 
+    public static void main(String[] args) {
+        LOGGER.log(Level.INFO,"ENTER MAIN");
         //Person p1 = new Employed("Ion", "Creanga", 31);
         //Person p2 = new Unemployed("Ion", "Creanga", 22);
         //Person p3 = new Student("Raul", "Rosu", 30);
